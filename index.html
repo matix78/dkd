@@ -11,28 +11,36 @@
 <body>
 
     <div class="container">
-        <div class="list-container">
-            <ul>
+        <div class="list-container scrollbar">
+            <ul id="meetingsList">
                 <li>
                     <h4>LISTA SPOTKAŃ NA ROK 2024 DLA FIRMY DKD TRANSPORT</h4>
                 </li>
                 <li>
-                    <h2>&#x2B07;   MARZEC   &#x2B07;</h2>
-                </li>
-                <li>
-                    <a class="view" href="./09-03-2024.html">🔴09-03-2024-rezerwacja-kubens</a>
-                </li>
-                <li>
-                    <a class="view" href="./10-03-2024.html">🔴10-03-2024-gang-olsena-urodziny-łośka</a>
+                    <select id="months" class="view" onchange="addLinks()">
+                        <option disabled selected hidden>KLIKNIJ TUTAJ I WYBIERZ MIESIĄC</option>
+                        <option>&#9660;  MARZEC  &#9660;</option>
+                        <option>&#9660;  KWIECIEŃ  &#9660;</option>
+                        <option>&#9660;  MAJ  &#9660;</option>
+                        <option>&#9660;  CZERWIEC  &#9660;</option>
+                        <option>&#9660;  LIPIEC  &#9660;</option>
+                        <option>&#9660;  SIERPIEŃ  &#9660;</option>
+                        <option>&#9660;  WRZESIEŃ  &#9660;</option>
+                        <option>&#9660;  PAŹDZIERNIK  &#9660;</option>
+                        <option>&#9660;  LISTOPAD  &#9660;</option>
+                        <option>&#9660;  GRUDZIEŃ  &#9660;</option>
+                    </select>
                 </li>
             </ul>
         </div>
     </div>
 
     <footer>
-        <p>&copy;2024 <b><a class="footer" href="#" target="_blank">DKD Transport</a></b>.
-            Wszelkie prawa zastrzeżone.</p>
+        <p>&copy;2024 <b><a class="footer" href="https://discord.gg/dRaqsjHc8F" target="_blank" style="color: rgb(209, 143, 21);">DKD Transport</a></b>. Wszelkie prawa zastrzeżone.</p>
     </footer>
+    <img src="Kopia_DKD_TRAnsport.png" class="background">
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

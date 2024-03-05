@@ -23,50 +23,99 @@
             padding: 0;
         }
 
-        img {
+        .zdjecie {
             width: 35%;
-            height: 100%;
+            max-height: 250px;
             border: 5px solid rgb(0, 0, 107);
             border-radius: 50px;
+        }
+
+        h2 {
+            color: green
+        }
+
+        .lista {
+            color: rgb(175, 0, 0);
+        }
+
+        .zdjecie:hover {
+            transform: scale(110%);
+            cursor: zoom-in;
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            animation: backgroundFade 15s infinite alternate;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.9);
         }
     </style>
 </head>
 
 <body>
-    <h2>Dnia 9.03.2024 Odbędzie się konwój Wozimy Polski Przysmaki + urodziny kierowcy kacpra</h2>
-    <ul>
-        <li>🌐Serwer: SIM 2</li>
-        <li>⏰Zbiórka: 19:40</li>
-        <li>⏰Start:20:20</li>
-        <li>📌Miasto Początkowe: Truckersmp HQ (duży parking )</li>
-        <li>📌Miasto Końcowe: Tallinn Polaris lines (port)</li>
-        <li>Długość Trasy: 1526km</li>
-        <li>DLC Beyond the Baltic Sea +Going East!</li>
-        <li>Zestaw Firmowy (ciągnik + naczepa najlepiej firanka)</li>
-        <li>Komunikacja na dc: https://discord.gg/skGXjrf8Up</li><br>
-        <li style="color: rgb(146, 0, 0);">1 DKD TRANSPORT<br>
-            2 WŁADCY SZOS<br>
-            3 GRYZLI <br>
-            4 ALL STARS<br>
-            5 DZIKI EXPRES <br>
-            6 DSP TRANSPORT <br>
-            7 GRONEK TRANSPORT <br>
-            8 Dino Speed<br>
-            9 PKS POLSKA <br>
-            10 National Eagle Company<br>
-            11 MIŚLUK <br>
-            12 VELOX AVIS <br>
-        </li>
-        <hr>
-        <img
-            src="https://cdn.discordapp.com/attachments/1199287409595142144/1204469947682529300/Zrzut_ekranu_2024-02-05_161848.png?ex=65f0888d&is=65de138d&hm=b26096ce7d2640a4c9e628d33b6ab43cff3f2ef98d1477016af95e8f3c9e961b&">
-        <img
-            src="https://cdn.discordapp.com/attachments/1199287409595142144/1204469948139835455/kubens.png?ex=65f0888d&is=65de138d&hm=98b2c76d4b0dcd01eef11fe769f3e93d97ce4de498e3dd14844cb367ac2bbdb6&">
-        <img
-            src="https://cdn.discordapp.com/attachments/1199287409595142144/1204469948613656586/Baner_Kubens_event.png?ex=65f0888d&is=65de138d&hm=4c49a6b29a73b118ee775be9ffea0ff81503bf8487d68d7070170a499ea2d291&">
-        <img
-            src="https://cdn.discordapp.com/attachments/1199287409595142144/1204469949029163008/Zrzut_ekranu_446.png?ex=65f0888d&is=65de138d&hm=ef557c2a370a96c0a5eae1dfa050944027a3a776d16827668dec8bd73828a37e&">
+    <div class="container">
+        <h2>Dnia 9.03.2024 Odbędzie się konwój Wozimy Polski Przysmaki + urodziny kierowcy kacpra</h2>
+        <ul>
+            <li>🌐Serwer: SIM 2</li>
+            <li>⏰Zbiórka: 19:40</li>
+            <li>⏰Start:20:20</li>
+            <li>📌Miasto Początkowe: Truckersmp HQ (duży parking )</li>
+            <li>📌Miasto Końcowe: Tallinn Polaris lines (port)</li>
+            <li>🛤️Długość Trasy: 1526km</li>
+            <li>❕DLC Beyond the Baltic Sea +Going East!</li>
+            <li>🚚Zestaw Firmowy (ciągnik + naczepa najlepiej firanka)</li>
+            <li>🤖Komunikacja na dc: https://discord.gg/skGXjrf8Up</li><br>
+            <li class="lista">
+                🏫Lista firm biorących udział:<br><br>
+                1. DKD TRANSPORT<br>
+                2. WŁADCY SZOS<br>
+                3. GRYZLI <br>
+                4. ALL STARS<br>
+                5. DZIKI EXPRES <br>
+                6. DSP TRANSPORT <br>
+                7. GRONEK TRANSPORT <br>
+                8. Dino Speed<br>
+                9. PKS POLSKA <br>
+                10. National Eagle Company<br>
+                11. MIŚLUK <br>
+                12. VELOX AVIS <br>
+            </li>
+        </div>
+            <hr>
+    <img alt="zdjecie3"
+        src="https://cdn.discordapp.com/attachments/1199287409595142144/1204469948613656586/Baner_Kubens_event.png?ex=65f0888d&is=65de138d&hm=4c49a6b29a73b118ee775be9ffea0ff81503bf8487d68d7070170a499ea2d291&"
+        onclick="openImage(this.src)" class="zdjecie">
+    <img alt="zdjecie1"
+        src="https://cdn.discordapp.com/attachments/1199287409595142144/1204469947682529300/Zrzut_ekranu_2024-02-05_161848.png?ex=65f0888d&is=65de138d&hm=b26096ce7d2640a4c9e628d33b6ab43cff3f2ef98d1477016af95e8f3c9e961b&"
+        onclick="openImage(this.src)" class="zdjecie">
+    <img alt="zdjecie2"
+        src="https://cdn.discordapp.com/attachments/1199287409595142144/1204469948139835455/kubens.png?ex=65f0888d&is=65de138d&hm=98b2c76d4b0dcd01eef11fe769f3e93d97ce4de498e3dd14844cb367ac2bbdb6&"
+        onclick="openImage(this.src)" class="zdjecie">
+    <img alt="zdjecie4"
+        src="https://cdn.discordapp.com/attachments/1199287409595142144/1204469949029163008/Zrzut_ekranu_446.png?ex=65f0888d&is=65de138d&hm=ef557c2a370a96c0a5eae1dfa050944027a3a776d16827668dec8bd73828a37e&"
+        onclick="openImage(this.src)" class="zdjecie">
     </ul>
+
+    <img src="Kopia_DKD_TRAnsport.png" class="background">
+
+    <script>
+        function openImage(src) {
+            window.open(src, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=500,height=500");
+        }
+    </script>
 </body>
 
 </html>
